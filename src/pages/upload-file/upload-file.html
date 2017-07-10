@@ -1,0 +1,17 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>upload-file</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <input-upload-file (fileUpload)="uploadFile($event)" message="Select file here" maxFileSize="10000000" ></input-upload-file>
+  <div>
+    File uploaded:
+    <div>{{ fileItem?.filename }}</div>
+    <div>{{ fileItem?.fileDocument }}</div>
+  </div>
+</ion-content>

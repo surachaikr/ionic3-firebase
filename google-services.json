@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "680123526449",
+    "firebase_url": "https://ionic3firebase.firebaseio.com",
+    "project_id": "ionic3firebase",
+    "storage_bucket": "ionic3firebase.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:680123526449:android:981c896c8ffaf3c4",
+        "android_client_info": {
+          "package_name": "info.actvee.ionic3firebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "680123526449-d0k2lrkvk928m3o7darrjp2faetch32v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDiRgNZzbxIOqr0zXs0Bx-SJntb89A0OaQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

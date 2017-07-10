@@ -1,0 +1,17 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>ngfor</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <div *ngFor="let item of values">
+    {{ item }}
+  </div>
+  <div *ngFor="let item of valuesJSON">
+    {{ item.value }}
+  </div>
+</ion-content>

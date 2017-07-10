@@ -1,0 +1,37 @@
+<!--
+  Generated template for the FirebaseDatabasePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+    <ion-navbar>
+        <ion-title>Realtime Database</ion-title>
+        <ion-buttons end *ngIf="currentUser">
+            <button ion-button icon-only (click)="addNew()">
+              <ion-icon name="add"></ion-icon>
+            </button>
+        </ion-buttons>
+    </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+    <button ion-button icon-left (click)="goToAuthen()" block *ngIf="!currentUser">
+      <ion-icon name="person"></ion-icon>
+      Please login.
+    </button>
+    <ion-list *ngIf="currentUser">
+        <ion-list-header>
+            <h3>{{currentUser.email}}</h3>
+            <ion-badge item-right>{{dataList.length}}</ion-badge>
+        </ion-list-header>
+        <ion-item *ngFor="let item of dataList">
+            <h2>{{item.val().title}}</h2>
+            <p>Note: {{item.val().note}}</p>
+            <ion-badge item-right color="danger" (click)="deleteNote(item.key)">X</ion-badge>
+        </ion-item>
+    </ion-list>
+</ion-content>

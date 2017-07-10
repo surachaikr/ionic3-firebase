@@ -1,0 +1,9 @@
+{
+  "HELLO": "hello",
+  "Ionic3_and_Firebase": "Ionic 3 and Firebase",
+  "IMAGE_UPLOAD_MESSAGE": "Drop image or Select image here. Max width 800 pixel and height 448 pixel. Only PNG, JPG and GIF image types.",
+  "IMAGE_INVALID_MESSAGE": "File is not an image type.",
+  "FILE_UPLOAD_MESSAGE": "Drop file or Select file here.",
+  "FILE_INVALID_MESSAGE": "File is not a document type.",
+  "MAX_FILE_SIZE_MESSAGE": "File is an over maximum file size."
+}

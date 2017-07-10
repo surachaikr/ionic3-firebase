@@ -1,0 +1,13 @@
+<!-- Generated template for the AuthenInfoComponent component -->
+<h2>Authenticated Information</h2>
+<div *ngIf="!isAuthen">
+    <p>No user login.</p>
+</div>
+<div *ngIf="isAuthen && user">
+    <p>UID: {{user.uid}}</p>
+    <p>Is Anonymous: {{user.isAnonymous}}</p>
+    <p>Email: {{user.email}}</p>
+    <button ion-button block color="danger" (click)="logout()">
+      Log out!
+    </button>
+</div>

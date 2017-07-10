@@ -1,0 +1,18 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>ngSwitch</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content padding>
+  <div [ngSwitch]="value">
+    <button ion-button *ngSwitchCase="2" (click)=set(1)>
+    Set 1
+  </button>
+    <button ion-button *ngSwitchCase="1" (click)=set(2)>
+    Set 2
+  </button>
+  </div>
+</ion-content>

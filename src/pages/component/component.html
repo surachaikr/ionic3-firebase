@@ -1,0 +1,18 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>component</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <h3>Use defined</h3>
+  {{ textInPage }}
+  <user-defined>Text in page.</user-defined>
+  <hr>
+  <h3>User defined input output</h3>
+  <user-defined-input-output [inputText]="pageText" (outputText)="setTextOutput($event)"></user-defined-input-output>
+  {{ textOutput }}
+</ion-content>

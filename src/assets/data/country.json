@@ -1,0 +1,1199 @@
+{  
+   "items":	[
+    {
+        "id": 9001,
+        "continent": "ASIA",
+        "data": "Afghanistan"
+    },
+    {
+        "id": 9002,
+        "continent": "ASIA",
+        "data": "Bangladesh"
+    },
+    {
+        "id": 9003,
+        "continent": "ASIA",
+        "data": "Bhutan"
+    },
+    {
+        "id": 9004,
+        "continent": "ASIA",
+        "data": "Brunei"
+    },
+    {
+        "id": 9005,
+        "continent": "ASIA",
+        "data": "Burma"
+    },
+    {
+        "id": 9006,
+        "continent": "ASIA",
+        "data": "Cambodia"
+    },
+    {
+        "id": 9007,
+        "continent": "ASIA",
+        "data": "China"
+    },
+    {
+        "id": 9008,
+        "continent": "ASIA",
+        "data": "EastTimor"
+    },
+    {
+        "id": 9009,
+        "continent": "ASIA",
+        "data": "HongKong"
+    },
+    {
+        "id": 9010,
+        "continent": "ASIA",
+        "data": "India"
+    },
+    {
+        "id": 9011,
+        "continent": "ASIA",
+        "data": "Indonesia"
+    },
+    {
+        "id": 9012,
+        "continent": "ASIA",
+        "data": "Iran"
+    },
+    {
+        "id": 9013,
+        "continent": "ASIA",
+        "data": "Japan"
+    },
+    {
+        "id": 9014,
+        "continent": "ASIA",
+        "data": "Korea,North"
+    },
+    {
+        "id": 9015,
+        "continent": "ASIA",
+        "data": "Korea,South"
+    },
+    {
+        "id": 9016,
+        "continent": "ASIA",
+        "data": "Laos"
+    },
+    {
+        "id": 9017,
+        "continent": "ASIA",
+        "data": "Macau"
+    },
+    {
+        "id": 9018,
+        "continent": "ASIA",
+        "data": "Malaysia"
+    },
+    {
+        "id": 9019,
+        "continent": "ASIA",
+        "data": "Maldives"
+    },
+    {
+        "id": 9020,
+        "continent": "ASIA",
+        "data": "Mongolia"
+    },
+    {
+        "id": 9021,
+        "continent": "ASIA",
+        "data": "Nepal"
+    },
+    {
+        "id": 9022,
+        "continent": "ASIA",
+        "data": "Pakistan"
+    },
+    {
+        "id": 9023,
+        "continent": "ASIA",
+        "data": "Philippines"
+    },
+    {
+        "id": 9024,
+        "continent": "ASIA",
+        "data": "Singapore"
+    },
+    {
+        "id": 9025,
+        "continent": "ASIA",
+        "data": "SriLanka"
+    },
+    {
+        "id": 9026,
+        "continent": "ASIA",
+        "data": "Taiwan"
+    },
+    {
+        "id": 9027,
+        "continent": "ASIA",
+        "data": "Thailand"
+    },
+    {
+        "id": 9028,
+        "continent": "ASIA",
+        "data": "Vietnam"
+    },
+    {
+        "id": 9029,
+        "continent": "BALTICS EUROPE",
+        "data": "Estonia"
+    },
+    {
+        "id": 9030,
+        "continent": "BALTICS EUROPE",
+        "data": "Latvia"
+    },
+    {
+        "id": 9031,
+        "continent": "BALTICS EUROPE",
+        "data": "Lithuania"
+    },
+    {
+        "id": 9032,
+        "continent": "BALTICS EUROPE",
+        "data": "Armenia"
+    },
+    {
+        "id": 9033,
+        "continent": "BALTICS EUROPE",
+        "data": "Azerbaijan"
+    },
+    {
+        "id": 9034,
+        "continent": "BALTICS EUROPE",
+        "data": "Belarus"
+    },
+    {
+        "id": 9035,
+        "continent": "BALTICS EUROPE",
+        "data": "Georgia"
+    },
+    {
+        "id": 9036,
+        "continent": "BALTICS EUROPE",
+        "data": "Moldova"
+    },
+    {
+        "id": 9037,
+        "continent": "BALTICS EUROPE ASIA",
+        "data": "Russia"
+    },
+    {
+        "id": 9038,
+        "continent": "BALTICS ASIA",
+        "data": "Kazakhstan"
+    },
+    {
+        "id": 9039,
+        "continent": "BALTICS ASIA",
+        "data": "Kyrgyzstan"
+    },
+    {
+        "id": 9040,
+        "continent": "BALTICS ASIA",
+        "data": "Tajikistan"
+    },
+    {
+        "id": 9041,
+        "continent": "BALTICS ASIA",
+        "data": "Turkmenistan"
+    },
+    {
+        "id": 9042,
+        "continent": "BALTICS ASIA",
+        "data": "Ukraine"
+    },
+    {
+        "id": 9043,
+        "continent": "BALTICS ASIA",
+        "data": "Uzbekistan"
+    },
+    {
+        "id": 9044,
+        "continent": "EASTERNEUROPE EUROPE",
+        "data": "Albania"
+    },
+    {
+        "id": 9045,
+        "continent": "EASTERNEUROPE EUROPE",
+        "data": "Bosnia&Herzegovina"
+    },
+    {
+        "id": 9046,
+        "continent": "EASTERNEUROPE EUROPE",
+        "data": "Bulgaria"
+    },
+    {
+        "id": 9047,
+        "continent": "EASTERNEUROPE EUROPE",
+        "data": "Croatia"
+    },
+    {
+        "id": 9048,
+        "continent": "EASTERNEUROPE EUROPE",
+        "data": "CzechRepublic"
+    },
+    {
+        "id": 9049,
+        "continent": "EASTERNEUROPE EUROPE",
+        "data": "Hungary"
+    },
+    {
+        "id": 9050,
+        "continent": "EASTERNEUROPE EUROPE",
+        "data": "Macedonia"
+    },
+    {
+        "id": 9051,
+        "continent": "EASTERNEUROPE EUROPE",
+        "data": "Poland"
+    },
+    {
+        "id": 9052,
+        "continent": "EASTERNEUROPE EUROPE",
+        "data": "Romania"
+    },
+    {
+        "id": 9053,
+        "continent": "EASTERNEUROPE EUROPE",
+        "data": "Serbia"
+    },
+    {
+        "id": 9054,
+        "continent": "EASTERNEUROPE EUROPE",
+        "data": "Slovakia"
+    },
+    {
+        "id": 9055,
+        "continent": "EASTERNEUROPE EUROPE",
+        "data": "Slovenia"
+    },
+    {
+        "id": 9056,
+        "continent": "LATINAMERICA CARIBBEAN",
+        "data": "Anguilla"
+    },
+    {
+        "id": 9057,
+        "continent": "LATINAMERICA CARIBBEAN",
+        "data": "Antigua&Barbuda"
+    },
+    {
+        "id": 9058,
+        "continent": "LATINAMERICA CARIBBEAN",
+        "data": "Argentina"
+    },
+    {
+        "id": 9059,
+        "continent": "LATINAMERICA CARIBBEAN",
+        "data": "Aruba"
+    },
+    {
+        "id": 9060,
+        "continent": "LATINAMERICA CARIBBEAN",
+        "data": "Bahamas,The"
+    },
+    {
+        "id": 9061,
+        "continent": "LATINAMERICA CARIBBEAN",
+        "data": "Barbados"
+    },
+    {
+        "id": 9062,
+        "continent": "LATINAMERICA CARIBBEAN",
+        "data": "Belize"
+    },
+    {
+        "id": 9063,
+        "continent": "LATINAMERICA CARIBBEAN",
+        "data": "Bolivia"
+    },
+    {
+        "id": 9064,
+        "continent": "LATINAMERICA CARIBBEAN",
+        "data": "Brazil"
+    },
+    {
+        "id": 9065,
+        "continent": "LATINAMERICA CARIBBEAN",
+        "data": "BritishVirginIs."
+    },
+    {
+        "id": 9066,
+        "continent": "LATINAMERICA CARIBBEAN",
+        "data": "CaymanIslands"
+    },
+    {
+        "id": 9067,
+        "continent": "LATINAMERICA CARIBBEAN",
+        "data": "Chile"
+    },
+    {
+        "id": 9068,
+        "continent": "LATINAMERICA CARIBBEAN",
+        "data": "Colombia"
+    },
+    {
+        "id": 9069,
+        "continent": "LATINAMERICA CARIBBEAN",
+        "data": "CostaRica"
+    },
+    {
+        "id": 9070,
+        "continent": "LATINAMERICA CARIBBEAN",
+        "data": "Cuba"
+    },
+    {
+        "id": 9071,
+        "continent": "LATINAMERICA CARIBBEAN",
+        "data": "Dominica"
+    },
+    {
+        "id": 9072,
+        "continent": "LATINAMERICA CARIBBEAN",
+        "data": "DominicanRepublic"
+    },
+    {
+        "id": 9073,
+        "continent": "LATINAMERICA CARIBBEAN",
+        "data": "Ecuador"
+    },
+    {
+        "id": 9074,
+        "continent": "LATINAMERICA CARIBBEAN",
+        "data": "ElSalvador"
+    },
+    {
+        "id": 9075,
+        "continent": "LATINAMERICA CARIBBEAN",
+        "data": "FrenchGuiana"
+    },
+    {
+        "id": 9076,
+        "continent": "LATINAMERICA CARIBBEAN",
+        "data": "Grenada"
+    },
+    {
+        "id": 9077,
+        "continent": "LATINAMERICA CARIBBEAN",
+        "data": "Guadeloupe"
+    },
+    {
+        "id": 9078,
+        "continent": "LATINAMERICA CARIBBEAN",
+        "data": "Guatemala"
+    },
+    {
+        "id": 9079,
+        "continent": "LATINAMERICA CARIBBEAN",
+        "data": "Guyana"
+    },
+    {
+        "id": 9080,
+        "continent": "LATINAMERICA CARIBBEAN",
+        "data": "Haiti"
+    },
+    {
+        "id": 9081,
+        "continent": "LATINAMERICA CARIBBEAN",
+        "data": "Honduras"
+    },
+    {
+        "id": 9082,
+        "continent": "LATINAMERICA CARIBBEAN",
+        "data": "Jamaica"
+    },
+    {
+        "id": 9083,
+        "continent": "LATINAMERICA CARIBBEAN",
+        "data": "Martinique"
+    },
+    {
+        "id": 9084,
+        "continent": "LATINAMERICA CARIBBEAN",
+        "data": "Mexico"
+    },
+    {
+        "id": 9085,
+        "continent": "LATINAMERICA CARIBBEAN",
+        "data": "Montserrat"
+    },
+    {
+        "id": 9086,
+        "continent": "LATINAMERICA CARIBBEAN",
+        "data": "NetherlandsAntilles"
+    },
+    {
+        "id": 9087,
+        "continent": "LATINAMERICA CARIBBEAN",
+        "data": "Nicaragua"
+    },
+    {
+        "id": 9088,
+        "continent": "LATINAMERICA CARIBBEAN",
+        "data": "Panama"
+    },
+    {
+        "id": 9089,
+        "continent": "LATINAMERICA CARIBBEAN",
+        "data": "Paraguay"
+    },
+    {
+        "id": 9090,
+        "continent": "LATINAMERICA CARIBBEAN",
+        "data": "Peru"
+    },
+    {
+        "id": 9091,
+        "continent": "LATINAMERICA CARIBBEAN",
+        "data": "PuertoRico"
+    },
+    {
+        "id": 9092,
+        "continent": "LATINAMERICA CARIBBEAN",
+        "data": "SaintKitts&Nevis"
+    },
+    {
+        "id": 9093,
+        "continent": "LATINAMERICA CARIBBEAN",
+        "data": "SaintLucia"
+    },
+    {
+        "id": 9094,
+        "continent": "LATINAMERICA CARIBBEAN",
+        "data": "SaintVincentandtheGrenadines"
+    },
+    {
+        "id": 9095,
+        "continent": "LATINAMERICA CARIBBEAN",
+        "data": "Suriname"
+    },
+    {
+        "id": 9096,
+        "continent": "LATINAMERICA CARIBBEAN",
+        "data": "Trinidad&Tobago"
+    },
+    {
+        "id": 9097,
+        "continent": "LATINAMERICA CARIBBEAN",
+        "data": "Turks&CaicosIs"
+    },
+    {
+        "id": 9098,
+        "continent": "LATINAMERICA CARIBBEAN",
+        "data": "Uruguay"
+    },
+    {
+        "id": 9099,
+        "continent": "LATINAMERICA CARIBBEAN",
+        "data": "Venezuela"
+    },
+    {
+        "id": 7010100,
+        "continent": "LATINAMERICA CARIBBEAN",
+        "data": "VirginIslands"
+    },
+    {
+        "id": 7010101,
+        "continent": "NEAREAST ASIA",
+        "data": "Bahrain"
+    },
+    {
+        "id": 7010102,
+        "continent": "NEAREAST ASIA",
+        "data": "Cyprus"
+    },
+    {
+        "id": 7010103,
+        "continent": "NEAREAST ASIA",
+        "data": "GazaStrip"
+    },
+    {
+        "id": 7010104,
+        "continent": "NEAREAST ASIA",
+        "data": "Iraq"
+    },
+    {
+        "id": 7010105,
+        "continent": "NEAREAST ASIA",
+        "data": "Israel"
+    },
+    {
+        "id": 7010106,
+        "continent": "NEAREAST ASIA",
+        "data": "Jordan"
+    },
+    {
+        "id": 7010107,
+        "continent": "NEAREAST ASIA",
+        "data": "Kuwait"
+    },
+    {
+        "id": 7010108,
+        "continent": "NEAREAST ASIA",
+        "data": "Lebanon"
+    },
+    {
+        "id": 7010109,
+        "continent": "NEAREAST ASIA",
+        "data": "Oman"
+    },
+    {
+        "id": 7010110,
+        "continent": "NEAREAST ASIA",
+        "data": "Qatar"
+    },
+    {
+        "id": 7010111,
+        "continent": "NEAREAST ASIA",
+        "data": "SaudiArabia"
+    },
+    {
+        "id": 7010112,
+        "continent": "NEAREAST ASIA",
+        "data": "Syria"
+    },
+    {
+        "id": 7010113,
+        "continent": "NEAREAST ASIA",
+        "data": "Turkey"
+    },
+    {
+        "id": 7010114,
+        "continent": "NEAREAST ASIA",
+        "data": "UnitedArabEmirates"
+    },
+    {
+        "id": 7010115,
+        "continent": "NEAREAST ASIA",
+        "data": "WestBank"
+    },
+    {
+        "id": 7010116,
+        "continent": "NEAREAST ASIA",
+        "data": "Yemen"
+    },
+    {
+        "id": 7010117,
+        "continent": "NORTHERNAFRICA AFARICA",
+        "data": "Algeria"
+    },
+    {
+        "id": 7010118,
+        "continent": "NORTHERNAFRICA AFARICA",
+        "data": "Egypt"
+    },
+    {
+        "id": 7010119,
+        "continent": "NORTHERNAFRICA AFARICA",
+        "data": "Libya"
+    },
+    {
+        "id": 7010120,
+        "continent": "NORTHERNAFRICA AFARICA",
+        "data": "Morocco"
+    },
+    {
+        "id": 7010121,
+        "continent": "NORTHERNAFRICA AFARICA",
+        "data": "Tunisia"
+    },
+    {
+        "id": 7010122,
+        "continent": "NORTHERNAFRICA AFARICA",
+        "data": "WesternSahara"
+    },
+    {
+        "id": 7010123,
+        "continent": "NORTHERNAMERICA",
+        "data": "Bermuda"
+    },
+    {
+        "id": 7010124,
+        "continent": "NORTHERNAMERICA",
+        "data": "Canada"
+    },
+    {
+        "id": 7010125,
+        "continent": "NORTHERNAMERICA",
+        "data": "Greenland"
+    },
+    {
+        "id": 7010126,
+        "continent": "NORTHERNAMERICA",
+        "data": "StPierre&Miquelon"
+    },
+    {
+        "id": 7010127,
+        "continent": "NORTHERNAMERICA",
+        "data": "UnitedStates"
+    },
+    {
+        "id": 7010128,
+        "continent": "OCEANIA",
+        "data": "AmericanSamoa"
+    },
+    {
+        "id": 7010129,
+        "continent": "OCEANIA",
+        "data": "Australia"
+    },
+    {
+        "id": 7010130,
+        "continent": "OCEANIA",
+        "data": "CookIslands"
+    },
+    {
+        "id": 7010131,
+        "continent": "OCEANIA",
+        "data": "Fiji"
+    },
+    {
+        "id": 7010132,
+        "continent": "OCEANIA",
+        "data": "FrenchPolynesia"
+    },
+    {
+        "id": 7010133,
+        "continent": "OCEANIA",
+        "data": "Guam"
+    },
+    {
+        "id": 7010134,
+        "continent": "OCEANIA",
+        "data": "Kiribati"
+    },
+    {
+        "id": 7010135,
+        "continent": "OCEANIA",
+        "data": "MarshallIslands"
+    },
+    {
+        "id": 7010136,
+        "continent": "OCEANIA",
+        "data": "Micronesia,Fed.St."
+    },
+    {
+        "id": 7010137,
+        "continent": "OCEANIA",
+        "data": "Nauru"
+    },
+    {
+        "id": 7010138,
+        "continent": "OCEANIA",
+        "data": "NewCaledonia"
+    },
+    {
+        "id": 7010139,
+        "continent": "OCEANIA",
+        "data": "NewZealand"
+    },
+    {
+        "id": 7010140,
+        "continent": "OCEANIA",
+        "data": "N.MarianaIslands"
+    },
+    {
+        "id": 7010141,
+        "continent": "OCEANIA",
+        "data": "Palau"
+    },
+    {
+        "id": 7010142,
+        "continent": "OCEANIA",
+        "data": "PapuaNewGuinea"
+    },
+    {
+        "id": 7010143,
+        "continent": "OCEANIA",
+        "data": "Samoa"
+    },
+    {
+        "id": 7010144,
+        "continent": "OCEANIA",
+        "data": "SolomonIslands"
+    },
+    {
+        "id": 7010145,
+        "continent": "OCEANIA",
+        "data": "Tonga"
+    },
+    {
+        "id": 7010146,
+        "continent": "OCEANIA",
+        "data": "Tuvalu"
+    },
+    {
+        "id": 7010147,
+        "continent": "OCEANIA",
+        "data": "Vanuatu"
+    },
+    {
+        "id": 7010148,
+        "continent": "OCEANIA",
+        "data": "WallisandFutuna"
+    },
+    {
+        "id": 7010149,
+        "continent": "SUB-SAHARANAFRICA AFRICA",
+        "data": "Angola"
+    },
+    {
+        "id": 7010150,
+        "continent": "SUB-SAHARANAFRICA AFRICA",
+        "data": "Benin"
+    },
+    {
+        "id": 7010151,
+        "continent": "SUB-SAHARANAFRICA AFRICA",
+        "data": "Botswana"
+    },
+    {
+        "id": 7010152,
+        "continent": "SUB-SAHARANAFRICA AFRICA",
+        "data": "BurkinaFaso"
+    },
+    {
+        "id": 7010153,
+        "continent": "SUB-SAHARANAFRICA AFRICA",
+        "data": "Burundi"
+    },
+    {
+        "id": 7010154,
+        "continent": "SUB-SAHARANAFRICA AFRICA",
+        "data": "Cameroon"
+    },
+    {
+        "id": 7010155,
+        "continent": "SUB-SAHARANAFRICA AFRICA",
+        "data": "CapeVerde"
+    },
+    {
+        "id": 7010156,
+        "continent": "SUB-SAHARANAFRICA AFRICA",
+        "data": "CentralAfricanRep."
+    },
+    {
+        "id": 7010157,
+        "continent": "SUB-SAHARANAFRICA AFRICA",
+        "data": "Chad"
+    },
+    {
+        "id": 7010158,
+        "continent": "SUB-SAHARANAFRICA AFRICA",
+        "data": "Comoros"
+    },
+    {
+        "id": 7010159,
+        "continent": "SUB-SAHARANAFRICA AFRICA",
+        "data": "DemocraticRepublicoftheCongo"
+    },
+    {
+        "id": 7010160,
+        "continent": "SUB-SAHARANAFRICA AFRICA",
+        "data": "Coted'Ivoire"
+    },
+    {
+        "id": 7010161,
+        "continent": "SUB-SAHARANAFRICA AFRICA",
+        "data": "Djibouti"
+    },
+    {
+        "id": 7010162,
+        "continent": "SUB-SAHARANAFRICA AFRICA",
+        "data": "EquatorialGuinea"
+    },
+    {
+        "id": 7010163,
+        "continent": "SUB-SAHARANAFRICA AFRICA",
+        "data": "Eritrea"
+    },
+    {
+        "id": 7010164,
+        "continent": "SUB-SAHARANAFRICA AFRICA",
+        "data": "Ethiopia"
+    },
+    {
+        "id": 7010165,
+        "continent": "SUB-SAHARANAFRICA AFRICA",
+        "data": "Gabon"
+    },
+    {
+        "id": 7010166,
+        "continent": "SUB-SAHARANAFRICA AFRICA",
+        "data": "Gambia,The"
+    },
+    {
+        "id": 7010167,
+        "continent": "SUB-SAHARANAFRICA AFRICA",
+        "data": "Ghana"
+    },
+    {
+        "id": 7010168,
+        "continent": "SUB-SAHARANAFRICA AFRICA",
+        "data": "Guinea"
+    },
+    {
+        "id": 7010169,
+        "continent": "SUB-SAHARANAFRICA AFRICA",
+        "data": "Guinea-Bissau"
+    },
+    {
+        "id": 7010170,
+        "continent": "SUB-SAHARANAFRICA AFRICA",
+        "data": "Kenya"
+    },
+    {
+        "id": 7010171,
+        "continent": "SUB-SAHARANAFRICA AFRICA",
+        "data": "Lesotho"
+    },
+    {
+        "id": 7010172,
+        "continent": "SUB-SAHARANAFRICA AFRICA",
+        "data": "Liberia"
+    },
+    {
+        "id": 7010173,
+        "continent": "SUB-SAHARANAFRICA AFRICA",
+        "data": "Madagascar"
+    },
+    {
+        "id": 7010174,
+        "continent": "SUB-SAHARANAFRICA AFRICA",
+        "data": "Malawi"
+    },
+    {
+        "id": 7010175,
+        "continent": "SUB-SAHARANAFRICA AFRICA",
+        "data": "Mali"
+    },
+    {
+        "id": 7010176,
+        "continent": "SUB-SAHARANAFRICA AFRICA",
+        "data": "Mauritania"
+    },
+    {
+        "id": 7010177,
+        "continent": "SUB-SAHARANAFRICA AFRICA",
+        "data": "Mauritius"
+    },
+    {
+        "id": 7010178,
+        "continent": "SUB-SAHARANAFRICA AFRICA",
+        "data": "Mayotte"
+    },
+    {
+        "id": 7010179,
+        "continent": "SUB-SAHARANAFRICA AFRICA",
+        "data": "Mozambique"
+    },
+    {
+        "id": 7010180,
+        "continent": "SUB-SAHARANAFRICA AFRICA",
+        "data": "Namibia"
+    },
+    {
+        "id": 7010181,
+        "continent": "SUB-SAHARANAFRICA AFRICA",
+        "data": "Niger"
+    },
+    {
+        "id": 7010182,
+        "continent": "SUB-SAHARANAFRICA AFRICA",
+        "data": "Nigeria"
+    },
+    {
+        "id": 7010183,
+        "continent": "SUB-SAHARANAFRICA AFRICA",
+        "data": "Reunion"
+    },
+    {
+        "id": 7010184,
+        "continent": "SUB-SAHARANAFRICA AFRICA",
+        "data": "Rwanda"
+    },
+    {
+        "id": 7010185,
+        "continent": "SUB-SAHARANAFRICA AFRICA",
+        "data": "SaintHelena"
+    },
+    {
+        "id": 7010186,
+        "continent": "SUB-SAHARANAFRICA AFRICA",
+        "data": "SaoTome&Principe"
+    },
+    {
+        "id": 7010187,
+        "continent": "SUB-SAHARANAFRICA AFRICA",
+        "data": "Senegal"
+    },
+    {
+        "id": 7010188,
+        "continent": "SUB-SAHARANAFRICA AFRICA",
+        "data": "Seychelles"
+    },
+    {
+        "id": 7010189,
+        "continent": "SUB-SAHARANAFRICA AFRICA",
+        "data": "SierraLeone"
+    },
+    {
+        "id": 7010190,
+        "continent": "SUB-SAHARANAFRICA AFRICA",
+        "data": "Somalia"
+    },
+    {
+        "id": 7010191,
+        "continent": "SUB-SAHARANAFRICA AFRICA",
+        "data": "SouthAfrica"
+    },
+    {
+        "id": 7010192,
+        "continent": "SUB-SAHARANAFRICA AFRICA",
+        "data": "Sudan"
+    },
+    {
+        "id": 7010193,
+        "continent": "SUB-SAHARANAFRICA AFRICA",
+        "data": "Swaziland"
+    },
+    {
+        "id": 7010194,
+        "continent": "SUB-SAHARANAFRICA AFRICA",
+        "data": "Tanzania"
+    },
+    {
+        "id": 7010195,
+        "continent": "SUB-SAHARANAFRICA AFRICA",
+        "data": "Togo"
+    },
+    {
+        "id": 7010196,
+        "continent": "SUB-SAHARANAFRICA AFRICA",
+        "data": "Uganda"
+    },
+    {
+        "id": 7010197,
+        "continent": "SUB-SAHARANAFRICA AFRICA",
+        "data": "Zambia"
+    },
+    {
+        "id": 7010198,
+        "continent": "SUB-SAHARANAFRICA AFRICA",
+        "data": "Zimbabwe"
+    },
+    {
+        "id": 7010199,
+        "continent": "WESTERNEUROPE EUROPE",
+        "data": "Andorra"
+    },
+    {
+        "id": 7010200,
+        "continent": "WESTERNEUROPE EUROPE",
+        "data": "Austria"
+    },
+    {
+        "id": 7010201,
+        "continent": "WESTERNEUROPE EUROPE",
+        "data": "Belgium"
+    },
+    {
+        "id": 7010202,
+        "continent": "WESTERNEUROPE EUROPE",
+        "data": "Denmark"
+    },
+    {
+        "id": 7010203,
+        "continent": "WESTERNEUROPE EUROPE",
+        "data": "FaroeIslands"
+    },
+    {
+        "id": 7010204,
+        "continent": "WESTERNEUROPE EUROPE",
+        "data": "Finland"
+    },
+    {
+        "id": 7010205,
+        "continent": "WESTERNEUROPE EUROPE",
+        "data": "France"
+    },
+    {
+        "id": 7010206,
+        "continent": "WESTERNEUROPE EUROPE",
+        "data": "Germany"
+    },
+    {
+        "id": 7010207,
+        "continent": "WESTERNEUROPE EUROPE",
+        "data": "Gibraltar"
+    },
+    {
+        "id": 7010208,
+        "continent": "WESTERNEUROPE EUROPE",
+        "data": "Greece"
+    },
+    {
+        "id": 7010209,
+        "continent": "WESTERNEUROPE EUROPE",
+        "data": "Guernsey"
+    },
+    {
+        "id": 7010210,
+        "continent": "WESTERNEUROPE EUROPE",
+        "data": "Iceland"
+    },
+    {
+        "id": 7010211,
+        "continent": "WESTERNEUROPE EUROPE",
+        "data": "Ireland"
+    },
+    {
+        "id": 7010212,
+        "continent": "WESTERNEUROPE EUROPE",
+        "data": "IsleofMan"
+    },
+    {
+        "id": 7010213,
+        "continent": "WESTERNEUROPE EUROPE",
+        "data": "Italy"
+    },
+    {
+        "id": 7010214,
+        "continent": "WESTERNEUROPE EUROPE",
+        "data": "Jersey"
+    },
+    {
+        "id": 7010215,
+        "continent": "WESTERNEUROPE EUROPE",
+        "data": "Liechtenstein"
+    },
+    {
+        "id": 7010216,
+        "continent": "WESTERNEUROPE EUROPE",
+        "data": "Luxembourg"
+    },
+    {
+        "id": 7010217,
+        "continent": "WESTERNEUROPE EUROPE",
+        "data": "Malta"
+    },
+    {
+        "id": 7010218,
+        "continent": "WESTERNEUROPE EUROPE",
+        "data": "Monaco"
+    },
+    {
+        "id": 7010219,
+        "continent": "WESTERNEUROPE EUROPE",
+        "data": "Netherlands"
+    },
+    {
+        "id": 7010220,
+        "continent": "WESTERNEUROPE EUROPE",
+        "data": "Norway"
+    },
+    {
+        "id": 7010221,
+        "continent": "WESTERNEUROPE EUROPE",
+        "data": "Portugal"
+    },
+    {
+        "id": 7010222,
+        "continent": "WESTERNEUROPE EUROPE",
+        "data": "SanMarino"
+    },
+    {
+        "id": 7010223,
+        "continent": "WESTERNEUROPE EUROPE",
+        "data": "Spain"
+    },
+    {
+        "id": 7010224,
+        "continent": "WESTERNEUROPE EUROPE",
+        "data": "Sweden"
+    },
+    {
+        "id": 7010225,
+        "continent": "WESTERNEUROPE EUROPE",
+        "data": "Switzerland"
+    },
+    {
+        "id": 7010226,
+        "continent": "WESTERNEUROPE EUROPE",
+        "data": "UnitedKingdom"
+    },
+    {
+        "id": 7010227,
+        "continent": "AFARICA",
+        "data": "AFARICA"
+    },
+    {
+        "id": 7010228,
+        "continent": "ASIA",
+        "data": "ASIA"
+    },
+    {
+        "id": 7010229,
+        "continent": "BALTICS",
+        "data": "BALTICS"
+    },
+    {
+        "id": 7010230,
+        "continent": "CARIBBEAN",
+        "data": "CARIBBEAN"
+    },
+    {
+        "id": 7010231,
+        "continent": "EASTERNEUROPE",
+        "data": "EASTERNEUROPE"
+    },
+    {
+        "id": 7010232,
+        "continent": "EUROPE",
+        "data": "EUROPE"
+    },
+    {
+        "id": 7010233,
+        "continent": "LATINAMERICA",
+        "data": "LATINAMERICA"
+    },
+    {
+        "id": 7010234,
+        "continent": "NEAREAST ASIA",
+        "data": "NEAREAST ASIA"
+    },
+    {
+        "id": 7010235,
+        "continent": "NORTHERNAFRICA",
+        "data": "NORTHERNAFRICA"
+    },
+    {
+        "id": 7010236,
+        "continent": "NORTHERNAMERICA",
+        "data": "NORTHERNAMERICA"
+    },
+    {
+        "id": 7010237,
+        "continent": "OCEANIA",
+        "data": "OCEANIA"
+    },
+    {
+        "id": 7010238,
+        "continent": "SUB-SAHARANAFRICA",
+        "data": "SUB-SAHARANAFRICA"
+    },
+    {
+        "id": 7010239,
+        "continent": "WESTERNEUROPE",
+        "data": "WESTERNEUROPE"
+    }
+]
+}

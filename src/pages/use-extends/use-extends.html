@@ -1,0 +1,25 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>use-extends</ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only (click)="goToHome()">
+        <ion-icon name="home"></ion-icon>
+    </button>
+    </ion-buttons>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <button ion-button (click)="changeLanguage('en-US')">
+    EN
+  </button>
+  <button ion-button (click)="changeLanguage('th-TH')">
+    TH
+  </button>
+  <div>
+    {{ 'HELLO' | translate }}&nbsp;{{ subject }}
+  </div>
+</ion-content>

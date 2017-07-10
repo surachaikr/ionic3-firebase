@@ -1,0 +1,10 @@
+  <div>
+    <div [ngClass]="{'nvfileover': hasBaseDropZoneOver}" (drop)="imageDrop($event)" (dragenter)="imageDragEnter($event)" (dragover)="imageDragOver($event)"
+      class="nofileover">
+      {{message}}<br/>
+      <input type="file" (change)="imageSelect($event)" />
+      <br/>
+      <span *ngIf="!isImage || isOverMaxFileSize" class="danger">{{imageUploadedMessage}}</span>
+    </div>
+    <img *ngIf="imageURI" [src]="imageURI" />
+  </div>

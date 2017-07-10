@@ -1,0 +1,34 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>data-submit-to-server</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <form [formGroup]="profileForm" (submit)="saveProfile()">
+    <ion-item>
+      <ion-label stacked>Name</ion-label>
+      <ion-input formControlName="name" type="text" placeholder="Your name">
+      </ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label stacked>Address</ion-label>
+      <ion-input formControlName="address" type="text" placeholder="Address"></ion-input>
+    </ion-item>
+    <ion-item>
+      <button ion-button type="submit" [disabled]="!profileForm.valid">Save</button>
+    </ion-item>
+  </form>
+  <div>
+    Output is : 
+  </div>
+  <div>
+    {{ 'name: ' + profile.name }}
+  </div>
+  <div>
+    {{ 'address: ' + profile.address }}
+  </div>
+</ion-content>

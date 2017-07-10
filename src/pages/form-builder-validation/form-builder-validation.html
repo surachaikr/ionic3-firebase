@@ -1,0 +1,33 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>form-builder-validation</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content padding>
+  <form #form="ngForm" [formGroup]="profileForm" (submit)="saveProfile(form)">
+    <ion-item>
+      <ion-label stacked>Name</ion-label>
+      <ion-input formControlName="name" type="text" placeholder="Your name" [class.invalid]="profileForm.controls.name.invalid && profileForm.controls.name.dirty">
+      </ion-input>
+    </ion-item>
+    <ion-item class="error-message" *ngIf="profileForm.controls.name.invalid && profileForm.controls.name.dirty" >
+      <p>ชื่อไม่ถูกต้อง</p>
+    </ion-item>
+    <ion-item>
+      <ion-label stacked>Email</ion-label>
+      <ion-input formControlName="email" type="email" placeholder="Email" [class.invalid]="profileForm.controls.email.invalid && profileForm.controls.email.dirty"></ion-input>
+    </ion-item>
+    <ion-item class="error-message" *ngIf="profileForm.controls.email.invalid && profileForm.controls.email.dirty" >
+      <p>อีเมล์ไม่ถูกต้อง</p>
+    </ion-item> 
+    <ion-item>
+      <button ion-button type="submit" [disabled]="!profileForm.valid">Save</button>
+    </ion-item>
+  </form>
+  <div>
+    Output is {{ output }}
+  </div>
+</ion-content>

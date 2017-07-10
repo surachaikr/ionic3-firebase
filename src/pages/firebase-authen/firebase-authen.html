@@ -1,0 +1,31 @@
+<!--
+  Generated template for the FirebaseAuthenPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+    <ion-navbar>
+        <ion-title>Firebase Authentication</ion-title>
+    </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+    <ion-list>
+        <ion-item>
+            <authen-info></authen-info>
+        </ion-item>
+        <ion-item (click)="loginAnonymous()">
+            Login Anonymous!
+        </ion-item>
+        <ion-item (click)="loginEmail()">
+            Login with Email!
+        </ion-item>
+        <ion-item (click)="loginFacebook()">
+            Login with Facebook!
+        </ion-item>
+    </ion-list>
+</ion-content>

@@ -1,0 +1,26 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>form-builder</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content padding>
+  <form #form="ngForm" [formGroup]="profileForm" (submit)="saveProfile(form)">
+    <ion-item>
+      <ion-label stacked>Name</ion-label>
+      <ion-input formControlName="name" type="text" placeholder="Your name"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label stacked>Email</ion-label>
+      <ion-input formControlName="email" type="email" placeholder="Email"></ion-input>
+    </ion-item>
+    <ion-item>
+      <button ion-button type="submit">Save</button>
+    </ion-item>
+  </form>
+  <div>
+    Output is {{ output }}
+  </div>
+</ion-content>

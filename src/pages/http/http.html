@@ -1,0 +1,18 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>http</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <div>
+    Country you select: {{ country.data }}
+  </div>
+  <hr>
+  <div *ngFor="let item of items" (click)="selectCountry(item)">
+    {{ item.id }}, {{ item.continent }}, {{ item.data }}
+  </div>
+</ion-content>

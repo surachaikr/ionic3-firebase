@@ -1,0 +1,18 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>firebase-cloud-message</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  Message: {{ message}}
+  <ion-item>
+    <ion-input type = "text" [(ngModel)] = "name" placeholder="put text here"></ion-input>
+  </ion-item>
+  <button ion-button (click)="startNotify()">Start notification</button> 
+  <button ion-button (click)="callPingPong()">Call cloud function</button> 
+  Status of call pingpong function is: {{ output }}
+</ion-content>

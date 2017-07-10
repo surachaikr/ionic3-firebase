@@ -1,0 +1,19 @@
+<ion-menu [content]="mainMenu">
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>App Menu</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content>
+    <ion-list>
+      <button ion-item>
+        My app menu 1 no action
+      </button>
+      <button ion-item>
+        My app menu 2 click without done
+      </button>
+    </ion-list>
+  </ion-content>
+</ion-menu>
+
+<ion-nav #mainMenu [root]="rootPage"></ion-nav>

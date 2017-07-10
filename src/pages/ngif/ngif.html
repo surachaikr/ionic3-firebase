@@ -1,0 +1,17 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>ngif</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <button ion-button *ngIf="value==2"  (click)=set(1)>
+    Set 1
+  </button>
+  <button ion-button *ngIf="value==1"  (click)=set(2)>
+    Set 2
+  </button>
+</ion-content>

@@ -1,0 +1,14 @@
+page-grid-responsive {
+    .col1 {
+        background-color: color($colors, primary);
+    }
+    .col2 {
+        background-color: #C5DCFC;
+    }
+    .col3 {
+        background-color: color($colors, secondary);
+    }
+    .col4 {
+        background-color: color($colors, light);
+    }
+}

@@ -1,0 +1,6 @@
+  <div [ngClass]="{'nvfileover': hasBaseDropZoneOver}" (drop)="fileDrop($event)" (dragenter)="fileDragEnter($event)" (dragover)="fileDragOver($event)"
+    class="nofileover">
+    {{message}}<br/>
+    <input type="file" (change)="fileSelect($event)" />
+    <span *ngIf="!isFileDocument || isOverMaxFileSize" class="danger">{{fileUploadedMessage}}</span>
+  </div>
