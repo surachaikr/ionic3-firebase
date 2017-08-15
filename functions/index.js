@@ -1,30 +1,66 @@
-var functions = require('firebase-functions');
-
+let functions = require('firebase-functions');
 const admin = require('firebase-admin');
-admin.initializeApp(functions.config().firebase);
+const serviceAccount = require("./serviceAccountKey.json");
+admin.initializeApp({
+  credential: admin.credential.cert(serviceAccount),
+  databaseURL: "https://ionic3firebase.firebaseio.com"
+});
+//admin.initializeApp(functions.config().firebase);
 
-exports.adjustData = functions.https.onRequest((req, res) => {
-
+exports.customAuth = functions.https.onRequest((req, res) => {
   res.set({
-    'Access-Control-Allow-Origin': '*',
-    'Access-Control-Allow-Headers': 'Content-Type, Authorization',
-    'Access-Control-Allow-Methods': 'PUT, GET, POST, DELETE, OPTIONS',
     'Content-Type': 'application/json'
   });
 
-  let original = req.query.text;
-  if (original) {
-    original = original.toUpperCase();
-  }
-  res.json({ 'name': 'originaltext', 'get': 'data', 'data': original });
+  //document https://www.npmjs.com/package/cors
+  let cors = require('cors')({
+    "origin": "*",
+    "methods": "PUT, GET, POST, OPTIONS",
+    "allowedHeaders": "Content-Type, Authorization"
+  });
+
+  cors(req, res, () => {
+    try {
+      admin.auth().createCustomToken(req.query.uid)
+        .then(function (customToken) {
+          res.json({ 'token': customToken, 'status': true });
+        })
+        .catch(function (error) {
+          res.json({ 'status': false, 'error': error });
+        });
+
+      //res.json({ 'token': 'lkk', 'status': true });
+    } catch (err) {
+      res.json({ 'error': err, 'status': false });
+    }
+  });
+});
+
+exports.adjustData = functions.https.onRequest((req, res) => {
+  res.set({
+    'Content-Type': 'application/json'
+  });
+
+  //document https://www.npmjs.com/package/cors
+  let cors = require('cors')({
+    "origin": "*",
+    "methods": "PUT, GET, POST, OPTIONS",
+    "allowedHeaders": "Content-Type, Authorization"
+  });
+
+  cors(req, res, () => {
+    let original = req.query.text;
+    if (original) {
+      original = original.toUpperCase();
+    }
+    res.json({ 'name': 'originaltext', 'get': 'data', 'data': original });
+  });
 });
 
 exports.welcomeNewToken = functions.database.ref('/messages/{pushId}/ionic3firebase')
   .onWrite(event => {
     let data = event.data.val();
     let welcomeMessage = 'Welcome : ' + data;
-
-
     let token = event.params.pushId;
     let payload = {
       notification: {
@@ -65,25 +101,23 @@ exports.welcomeNewToken = functions.database.ref('/messages/{pushId}/ionic3fireb
   });
 
 exports.receiveData = functions.https.onRequest((req, res) => {
-
   res.set({
-    'Access-Control-Allow-Origin': '*',
-    'Access-Control-Allow-Headers': 'Content-Type, Authorization',
-    'Access-Control-Allow-Methods': 'POST',
     'Content-Type': 'application/json'
   });
 
-  res.json({ 'name': 'OK-' + req.body.name, 'address': 'OK-' + req.body.address, 'status': 'RECEIVED' });
+  //document https://www.npmjs.com/package/cors
+  var cors = require('cors')({
+    "origin": "*",
+    "methods": "PUT, GET, POST, OPTIONS",
+    "allowedHeaders": "Content-Type, Authorization"
+  });
+
+  cors(req, res, () => {
+    res.json({ 'name': 'OK-' + req.body.name, 'address': 'OK-' + req.body.address, 'status': 'RECEIVED' });
+  });
 });
 
 /*exports.log = functions.https.onRequest((req, res) => {
-
-  res.set({
-    'Access-Control-Allow-Origin': '*',
-    'Access-Control-Allow-Headers': 'Content-Type, Authorization',
-    'Access-Control-Allow-Methods': 'POST',
-    'Content-Type': 'application/json'
-  });
 
   let source = req.query.source ? req.query.source : 'NOSOURCE';
   let level = req.query.level ? req.query.level : 'INFO';

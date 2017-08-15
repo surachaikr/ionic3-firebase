@@ -98,7 +98,8 @@ export class FirebaseCloudMessagePage {
 
       messaging.onMessage(payload => {
         console.log(payload);
-        this.message = "Message received. " + payload.data.welcome + "->" + JSON.stringify(payload);
+        let pl:any = payload;
+        this.message = "Message received. " + pl.data.welcome + "->" + JSON.stringify(pl);
       });
 
     }).catch(err => {

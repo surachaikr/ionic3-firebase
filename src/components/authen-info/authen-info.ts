@@ -2,12 +2,6 @@ import { LoadingController } from 'ionic-angular';
 import { Component, NgZone } from '@angular/core';
 import firebase from "firebase";
 
-/**
- * Generated class for the AuthenInfoComponent component.
- *
- * See https://angular.io/docs/ts/latest/api/core/index/ComponentMetadata-class.html
- * for more info on Angular Components.
- */
 @Component({
   selector: 'authen-info',
   templateUrl: 'authen-info.html'
@@ -32,6 +26,16 @@ export class AuthenInfoComponent {
         }
       });
     });
+
+    this.user = firebase.auth().currentUser;
+    if (this.user) {
+      console.log("user: ", JSON.stringify(this.user));
+      this.isAuthen = true;
+      this.user = this.user;
+    } else {
+      this.isAuthen = false;
+      this.user = null;
+    }
   }
 
   logout() {

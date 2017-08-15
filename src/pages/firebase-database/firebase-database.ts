@@ -2,12 +2,6 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, AlertController } from 'ionic-angular';
 import firebase from "firebase";
 
-/**
- * Generated class for the FirebaseDatabasePage page.
- *
- * See http://ionicframework.com/docs/components/#navigation for more info
- * on Ionic pages and navigation.
- */
 @IonicPage()
 @Component({
   selector: 'page-firebase-database',
@@ -34,10 +28,6 @@ export class FirebaseDatabasePage {
       }
       unsubscribe();
     });
-  }
-
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad FirebaseDatabasePage');
   }
 
   ionViewDidLeave() {

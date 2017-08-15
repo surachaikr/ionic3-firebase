@@ -25,7 +25,7 @@
     </button>
     <ion-list *ngIf="currentUser">
         <ion-list-header>
-            <h3>{{currentUser.email}}</h3>
+            <h3>Current user: {{currentUser.email}}</h3>
             <ion-badge item-right>{{dataList.length}}</ion-badge>
         </ion-list-header>
         <ion-item *ngFor="let item of dataList">

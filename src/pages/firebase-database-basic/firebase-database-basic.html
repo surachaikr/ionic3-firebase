@@ -1,0 +1,60 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>firebase-database-basic</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <button ion-button icon-left (click)="goToAuthen()" block *ngIf="!currentUser">
+    <ion-icon name="person"></ion-icon>
+      Please login.
+  </button>
+  <div *ngIf="currentUser">
+    <h3>Current user: {{currentUser.email}}</h3>
+    <button ion-button icon-left (click)="push()">
+      Push
+    </button>
+    <button ion-button icon-left (click)="set()">
+      set
+    </button>
+    <button ion-button icon-left (click)="update()">
+      update
+    </button>
+    <button ion-button icon-left (click)="delete()">
+      delete
+    </button>
+    <div>
+      <button ion-button icon-left (click)="like()">
+        like
+      </button>
+      <button ion-button icon-left (click)="unlike()">
+        unlike
+      </button>
+    </div>
+    <div>
+      Data in Database:<br>
+      {{dataJson}}
+    </div>
+    <br>
+    <div>
+      <button ion-button icon-left (click)="list()">
+        list
+      </button>
+      <button ion-button icon-left (click)="orderByValue()">
+        order by value tel
+      </button>
+      <button ion-button icon-left (click)="filter()">
+        filter 2 records
+      </button>
+    </div>
+    <div>
+      List data:
+      <div *ngFor="let item of dataList">
+        {{item}}
+      </div>
+    </div>
+  </div>
+</ion-content>

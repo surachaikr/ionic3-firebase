@@ -1,0 +1,14 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>firebaseui-authen-status</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <div *ngIf="!signinStatus" (click)="signin()">Please sign in before, click here</div>
+  <div *ngIf="signinStatus" (click)="signout()">You signed in. Would you like to sign out? Click here</div>
+  <div>Your profile are: {{accountProfile}}</div>
+</ion-content>

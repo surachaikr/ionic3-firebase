@@ -150,18 +150,6 @@ export class HomePage {
     });
   }
 
-  public firebaseCloudFunction() {
-    this.navCtrl.push('FirebaseCloudFunctionPage');
-  }
-
-  public firebaseCloudMessage() {
-    this.navCtrl.push('FirebaseCloudMessagePage');
-  }
-
-  public firebaseCrashReport() {
-    this.navCtrl.push('FirebaseCrashReportPage');
-  }
-
   public barcodeScanner() {
     this.navCtrl.push('BarcodeScannerPage');
   }
@@ -170,24 +158,8 @@ export class HomePage {
     this.navCtrl.push('CameraExamplePage');
   }
 
-  public algoliaSearch() {
-    this.navCtrl.push('AlgoliaDemoPage');
-  }
-
   public googleMaps() {
     this.navCtrl.push('GoogleMapsPage');
-  }
-
-  public firebaseAuthen() {
-    this.navCtrl.push('FirebaseAuthenPage');
-  }
-
-  public firebaseDatabase() {
-    this.navCtrl.push('FirebaseDatabasePage');
-  }
-
-  public firebaseStorage() {
-    this.navCtrl.push('FirebaseStoragePage');
   }
 
   public chart() {
@@ -201,5 +173,43 @@ export class HomePage {
   public uploadImagePage() {
     this.navCtrl.push('UploadImagePage');
   }
+ 
   
+  //**************Firebase*********************/
+  
+  public firebaseAuthen() {
+    this.navCtrl.push('FirebaseAuthenPage');
+  }
+
+  public firebaseUIAuthen() {
+    this.navCtrl.push('FirebaseuiAuthenPage');
+  }
+
+  public firebaseDatabaseBasic() {
+    this.navCtrl.push('FirebaseDatabaseBasicPage');
+  }
+
+  public firebaseDatabase() {
+    this.navCtrl.push('FirebaseDatabasePage');
+  }
+
+  public firebaseStorage() {
+    this.navCtrl.push('FirebaseStoragePage');
+  }
+
+  public algoliaSearch() {
+    this.navCtrl.push('AlgoliaDemoPage');
+  }
+
+  public firebaseCloudFunction() {
+    this.navCtrl.push('FirebaseCloudFunctionPage');
+  }
+
+  public firebaseCloudMessage() {
+    this.navCtrl.push('FirebaseCloudMessagePage');
+  }
+
+  public firebaseCrashReport() {
+    this.navCtrl.push('FirebaseCrashReportPage');
+  }
 }
