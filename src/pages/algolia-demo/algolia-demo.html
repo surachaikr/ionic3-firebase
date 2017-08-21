@@ -15,28 +15,22 @@
 
 
 <ion-content padding>
-
     <ion-item-group>
         <ion-item-divider>
             <h2>Contacts List</h2>
             <ion-badge item-right color="danger">{{noHits}}</ion-badge>
         </ion-item-divider>
-        <!--<ion-item *ngFor="let item of hits">
-            <h3>Name: {{item.name}}</h3>
-            <p>Rating: {{item.rating}}</p>
-            <p>Alternative Name: {{item.alternative_name}}</p>
-            <p>match name: <span [innerHTML]="item._highlightResult.name.value"></span></p>
-            <p *ngIf="item._highlightResult.alternative_name">match alternative: <span [innerHTML]="item._highlightResult.alternative_name.value"></span></p>
-        </ion-item>-->
+
         <ion-item *ngFor="let item of hits; let i = index" [attr.data-index]="i">
             <ion-badge item-left>{{i+1}}</ion-badge>
-            <h3>Name: {{item.name.first}} {{item.name.last}}</h3>
+            <p>Phone: {{item.myTestIndex.phone[object.keys(item.myTestIndex.phone)[0]].Price}}</p>
+            <!-- <h3>Name: {{item.name.first}} {{item.name.last}}</h3>
             <p>Balance: {{item.balance}}</p>
             <p>Company: {{item.company}}</p>
             <p>Phone: {{item.phone}}</p>
             <p>match first name: <span [innerHTML]="item._highlightResult.name.first.value"></span></p>
             <p>match last name: <span [innerHTML]="item._highlightResult.name.last.value"></span></p>
-            <p *ngIf="item._highlightResult.company.value">match company: <span [innerHTML]="item._highlightResult.company.value"></span></p>
+            <p *ngIf="item?._highlightResult.company.value">match company: <span [innerHTML]="item?._highlightResult.company.value"></span></p> -->
         </ion-item>
     </ion-item-group>
 </ion-content>

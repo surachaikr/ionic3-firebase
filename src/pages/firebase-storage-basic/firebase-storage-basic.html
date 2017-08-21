@@ -1,0 +1,42 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>firebase-storage-basic</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  {{message}}
+  <div>
+    Image from save
+    <img ion-img *ngIf="imageUrlSave"  [src]="imageUrlSave" alt="">
+  </div>
+  <button ion-button (click)="saveImageToStorage()">
+    Save image to storage
+  </button>
+  <div>
+    Image from load
+    <img ion-img *ngIf="imageUrlLoad"  [src]="imageUrlLoad" alt="">
+  </div>
+  <button ion-button (click)="loadImageFromStorage()">
+      Load image from storage
+  </button>
+  <br>
+  <button ion-button (click)="loadFileFromStorage()">
+      Load file from storage
+  </button>
+  <br>
+  <button ion-button (click)="delete()" color="danger">
+      Load file from storage
+  </button>
+  <br>
+  {{metadata}}
+  <button ion-button (click)="loadMetadata()">
+      Load metadata from storage
+  </button>
+  <button ion-button (click)="saveMetadata()">
+      Save metadata from storage
+  </button>
+</ion-content>

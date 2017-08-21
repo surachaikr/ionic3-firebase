@@ -8,11 +8,17 @@
 
 
 <ion-content padding>
-  Message: {{ message}}
+  <button ion-button icon-left (click)="goToAuthen()" block *ngIf="!currentUser">
+        <ion-icon name="person"></ion-icon>
+          Please login.
+  </button> 
+  <div>
+    Message: {{ message}}
+  </div>
   <ion-item>
-    <ion-input type = "text" [(ngModel)] = "name" placeholder="put text here"></ion-input>
+    <ion-input type="text" [(ngModel)]="name" placeholder="put text here"></ion-input>
   </ion-item>
-  <button ion-button (click)="startNotify()">Start notification</button> 
-  <button ion-button (click)="callPingPong()">Call cloud function</button> 
-  Status of call pingpong function is: {{ output }}
+  <button ion-button (click)="startNotify()">Start notification</button>
+  <button ion-button (click)="callPingPong()">Call cloud function</button> Status of call pingpong function is: {{ output
+  }}
 </ion-content>

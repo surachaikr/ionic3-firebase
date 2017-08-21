@@ -14,6 +14,12 @@
 
 
 <ion-content padding>
+  <ion-item>
+    <ion-input type="text" [(ngModel)]="error" placeholder="put error here"></ion-input>
+  </ion-item>
+  <button ion-button (click)="sendError()">
+    Send error
+  </button>
   message: {{ message }}
-  <button ion-button (click)="getData()">Get data</button>
+  <!-- <button ion-button (click)="getData()">Get data</button> -->
 </ion-content>

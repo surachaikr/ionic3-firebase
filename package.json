@@ -49,7 +49,7 @@
         "cordova-plugin-console": "^1.0.7",
         "cordova-plugin-customurlscheme": "^4.3.0",
         "cordova-plugin-device": "^1.1.6",
-        "cordova-plugin-firebase": "^0.1.22",
+        "cordova-plugin-firebase": "^0.1.23",
         "cordova-plugin-geolocation": "^2.4.3",
         "cordova-plugin-inappbrowser": "^1.7.1",
         "cordova-plugin-splashscreen": "^4.0.3",
@@ -74,9 +74,7 @@
     },
     "devDependencies": {
         "@ionic/app-scripts": "^2.1.3",
-        "@ionic/cli-plugin-cordova": "1.6.1",
-        "@ionic/cli-plugin-ionic-angular": "1.4.1",
-        "ionic": "3.7.0",
+        "ionic": "3.9.2",
         "typescript": "2.3.4"
     },
     "description": "Ionic 3 Native, Web and Firebase",
@@ -97,7 +95,6 @@
                 "CAMERA_USAGE_DESCRIPTION": " ",
                 "PHOTOLIBRARY_USAGE_DESCRIPTION": " "
             },
-            "cordova-plugin-firebase": {},
             "cordova-plugin-geolocation": {
                 "GEOLOCATION_USAGE_DESCRIPTION": " "
             },
@@ -111,7 +108,8 @@
                 "ANDROID_PATHPREFIX": "/"
             },
             "cordova-plugin-inappbrowser": {},
-            "phonegap-plugin-barcodescanner": {}
+            "phonegap-plugin-barcodescanner": {},
+            "cordova-plugin-firebase": {}
         }
     }
 }

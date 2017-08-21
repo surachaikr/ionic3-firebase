@@ -102,9 +102,9 @@ export class FirebaseDatabaseBasicPage {
     });
   }
 
-  orderByValue() {
+  orderByKey() {
     this.dataList = [];
-    firebase.database().ref('myFriends').child(this.currentUser.uid).orderByValue().once('value', (snapshot) => {
+    firebase.database().ref('myFriends').child(this.currentUser.uid).orderByKey().once('value', (snapshot) => {
       console.log(JSON.stringify(snapshot.val()))
       snapshot.forEach((childSnapshot) => {
         this.dataList.push(JSON.stringify(childSnapshot.val()));
@@ -116,6 +116,45 @@ export class FirebaseDatabaseBasicPage {
   filter() {
     this.dataList = [];
     firebase.database().ref('myFriends').child(this.currentUser.uid).limitToFirst(2).once('value', (snapshot) => {
+      snapshot.forEach((childSnapshot) => {
+        this.dataList.push(JSON.stringify(childSnapshot.val()));
+        return false;
+      });
+    });
+  }
+
+  indexChild() {
+    firebase.database().ref('myTestIndex/phone').set({
+      'IPhone 7': {
+        'Price': '30000',
+        'Color': 'Red'
+      },
+      'Samsung S8': {
+        'Price': '25000',
+        'Color': 'Black'
+      }
+    });
+
+    this.dataList = [];
+    firebase.database().ref('myTestIndex/phone').orderByChild('Price').once('value', (snapshot) => {
+      console.log(JSON.stringify(snapshot.val()))
+      snapshot.forEach((childSnapshot) => {
+        this.dataList.push(JSON.stringify(childSnapshot.val()));
+        return false;
+      });
+    });
+  }
+
+  indexValue() {
+    firebase.database().ref('age').set({
+      'surachai': 30,
+      'somsak': 50,
+      'somporn': 20
+    });
+
+    this.dataList = [];
+    firebase.database().ref('age').orderByValue().once('value', (snapshot) => {
+      console.log(JSON.stringify(snapshot.val()))
       snapshot.forEach((childSnapshot) => {
         this.dataList.push(JSON.stringify(childSnapshot.val()));
         return false;

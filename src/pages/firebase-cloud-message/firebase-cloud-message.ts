@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, Platform } from 'ionic-angular';
+import { IonicPage, Platform, NavController } from 'ionic-angular';
 
 import firebase from "firebase";
 import { Firebase } from '@ionic-native/firebase';
@@ -10,14 +10,24 @@ import { Firebase } from '@ionic-native/firebase';
   templateUrl: 'firebase-cloud-message.html',
 })
 export class FirebaseCloudMessagePage {
-  public message: string;
-  public output: string;
-  public token: string;
-  public name: string;
+  message: string;
+  output: string;
+  token: string;
+  name: string;
+  currentUser: firebase.User = null;
 
-  constructor(private firebaseN: Firebase, private platform: Platform) {
+  constructor(public navCtrl: NavController, private firebaseN: Firebase, private platform: Platform) {
+    const unsubscribe = firebase.auth().onAuthStateChanged(user => {
+      this.currentUser = user;
+      unsubscribe();
+    });
   }
 
+  ionViewDidLoad() {
+    firebase.auth().signInAnonymously().then((user) => {
+      this.currentUser = user;
+    });
+  }
   startNotify() {
     if (this.platform.is('cordova')) {
       this.notificationOnCordova();
@@ -27,13 +37,13 @@ export class FirebaseCloudMessagePage {
   }
 
   callPingPong() {
-    firebase.auth().signInAnonymously().then((user) => {
-      console.log("uid = " + user.uid);
-      console.log(user.isAnonymous); // true
+    if (this.currentUser) {
       firebase.database().ref('messages/' + this.token).set({
         ionic3firebase: this.name
       });
-    });
+    } else {
+      this.goToAuthen();
+    }
   }
 
   notificationOnCordova() {
@@ -107,4 +117,8 @@ export class FirebaseCloudMessagePage {
     });
   }
 
+  goToAuthen() {
+    this.navCtrl.pop();
+    this.navCtrl.push('FirebaseAuthenPage');
+  }
 }

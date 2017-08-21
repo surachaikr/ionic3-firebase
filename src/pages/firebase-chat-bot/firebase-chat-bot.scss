@@ -1,0 +1,93 @@
+page-firebase-chat-bot {
+    .messages {
+        padding-bottom: 40px;
+    }
+    .inputChatFrame {
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        top: 100;
+        background-color: rgba(color($colors, chat), 1.0);
+        padding: 2px;   
+        padding-left: 5px;
+        padding-right: 5px;
+        color: color($colors, white);
+        font-size: large;
+    }
+    .message {
+        display: block;
+        -webkit-box-sizing: content-box;
+        -moz-box-sizing: content-box;
+        box-sizing: content-box;
+        float: left;
+        z-index: auto;
+        width: auto;
+        height: auto;
+        position: static;
+        cursor: default;
+        opacity: 1;
+        margin: 0;
+        padding: 8px;
+        overflow: visible;
+        border: 0 solid;
+        border-left: 3px solid rgba(241,196,15,1);
+        -webkit-border-radius: 14px 14px 14px 0;
+        border-radius: 14px 14px 14px 0;
+        font: normal 14px/1 "Times New Roman", Times, serif;
+        color: black;
+        -o-text-overflow: ellipsis;
+        text-overflow: ellipsis;
+        background: rgba(239,239,239,1);
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        text-shadow: none;
+        -webkit-transition: none;
+        -moz-transition: none;
+        -o-transition: none;
+        transition: none;
+        -webkit-transform: none;
+        transform: none;
+        -webkit-transform-origin: 50% 50% 0;
+        transform-origin: 50% 50% 0;
+    }
+
+    .message-ower {
+        display: block;
+        -webkit-box-sizing: content-box;
+        -moz-box-sizing: content-box;
+        box-sizing: content-box;
+        float: right;
+        z-index: auto;
+        width: auto;
+        height: auto;
+        position: static;
+        cursor: default;
+        opacity: 1;
+        margin: 0;
+        padding: 8px;
+        overflow: visible;
+        border: 0 solid;
+        border-right: 3px solid rgba(93,0,255,1);
+        border-left-color: rgba(241,196,15,1);
+        -webkit-border-radius: 14px 14px 0;
+        border-radius: 14px 14px 0;
+        font: normal 14px/1 "Times New Roman", Times, serif;
+        color: black;
+        -o-text-overflow: ellipsis;
+        text-overflow: ellipsis;
+        background: #f1c40f;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        text-shadow: none;
+        -webkit-transition: none;
+        -moz-transition: none;
+        -o-transition: none;
+        transition: none;
+        -webkit-transform: none;
+        transform: none;
+        -webkit-transform-origin: 50% 50% 0;
+        transform-origin: 50% 50% 0;
+    }
+
+}

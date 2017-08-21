@@ -3,12 +3,6 @@ import { Camera } from '@ionic-native/camera';
 import { Component, NgZone } from '@angular/core';
 import firebase from "firebase";
 
-/**
- * Generated class for the FirebaseStoragePage page.
- *
- * See http://ionicframework.com/docs/components/#navigation for more info
- * on Ionic pages and navigation.
- */
 @IonicPage()
 @Component({
   selector: 'page-firebase-storage',
@@ -16,12 +10,11 @@ import firebase from "firebase";
 })
 export class FirebaseStoragePage {
   public currentUser: firebase.User = null;
-  public photos: any;
+  public photos: any = [];
   public isCordova: boolean = false;
   public zone: NgZone;
 
   constructor(public navCtrl: NavController, public platform: Platform, public cam: Camera, public loadingCtrl: LoadingController) {
-    this.photos = [];
     this.zone = new NgZone({});
 
     platform.ready().then(() => {

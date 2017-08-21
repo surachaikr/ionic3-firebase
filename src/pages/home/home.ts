@@ -193,6 +193,10 @@ export class HomePage {
     this.navCtrl.push('FirebaseDatabasePage');
   }
 
+  public firebaseStorageBasic() {
+    this.navCtrl.push('FirebaseStorageBasicPage');
+  }
+
   public firebaseStorage() {
     this.navCtrl.push('FirebaseStoragePage');
   }
@@ -203,7 +207,7 @@ export class HomePage {
 
   public firebaseCloudFunction() {
     this.navCtrl.push('FirebaseCloudFunctionPage');
-  }
+  } 
 
   public firebaseCloudMessage() {
     this.navCtrl.push('FirebaseCloudMessagePage');
@@ -211,5 +215,9 @@ export class HomePage {
 
   public firebaseCrashReport() {
     this.navCtrl.push('FirebaseCrashReportPage');
+  }
+
+  public chatBot() {
+    this.navCtrl.push('FirebaseChatBotPage');
   }
 }

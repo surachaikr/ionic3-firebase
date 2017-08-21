@@ -7,6 +7,8 @@ admin.initializeApp({
 });
 //admin.initializeApp(functions.config().firebase);
 
+let algoliasearch = require('algoliasearch');
+
 exports.customAuth = functions.https.onRequest((req, res) => {
   res.set({
     'Content-Type': 'application/json'
@@ -106,7 +108,7 @@ exports.receiveData = functions.https.onRequest((req, res) => {
   });
 
   //document https://www.npmjs.com/package/cors
-  var cors = require('cors')({
+  let cors = require('cors')({
     "origin": "*",
     "methods": "PUT, GET, POST, OPTIONS",
     "allowedHeaders": "Content-Type, Authorization"
@@ -114,6 +116,42 @@ exports.receiveData = functions.https.onRequest((req, res) => {
 
   cors(req, res, () => {
     res.json({ 'name': 'OK-' + req.body.name, 'address': 'OK-' + req.body.address, 'status': 'RECEIVED' });
+  });
+});
+
+exports.addIndexToAlgolia = functions.https.onRequest((req, res) => {
+  res.set({
+    'Content-Type': 'application/json'
+  });
+
+  //document https://www.npmjs.com/package/cors
+  let cors = require('cors')({
+    "origin": "*",
+    "methods": "PUT, GET, POST, OPTIONS",
+    "allowedHeaders": "Content-Type, Authorization"
+  });
+
+  cors(req, res, () => {
+    let aglClient = algoliasearch("9OW81NTIOO", "1154bed2113f415c7cb16056d989cff6");
+    let aglIndex = aglClient.initIndex('ionic3firebase');
+    let jsonData = [{
+      "myTestIndex": {
+        "phone": {
+          "IPhone 7": {
+            "Price": "30000",
+            "Color": "Red"
+          },
+          "Samsung S8": {
+            "Price": "25000",
+            "Color": "Black"
+          }
+        }
+      }
+    }];
+
+    aglIndex.addObjects(jsonData, (err, content) => {
+      res.json({ "content": content, "err": err });
+    });
   });
 });
 

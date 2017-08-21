@@ -1,0 +1,39 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>firebase-chat-bot : user: {{userName}}</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <button ion-button icon-left (click)="goToAuthen()" block *ngIf="!currentUser">
+    <ion-icon name="person"></ion-icon>
+    Please login.
+  </button>
+
+  <ion-grid class="messages">
+    <ion-row *ngFor="let item of chatList">
+      <ion-col col-0>
+      </ion-col>
+      <ion-col col-12 *ngIf="item.val().userName!=userName">
+        <div>
+          {{item.val().userName}}
+        </div>
+        <div class="message">
+          {{item.val().message}}
+        </div>
+      </ion-col>
+      <ion-col col-12 *ngIf="item.val().userName==userName">
+        <div class="message-ower">
+          {{item.val().message}}
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <div class="inputChatFrame">
+    <ion-input type="text" class="inputChat" [(ngModel)]="inputChat" (change)="chat()"></ion-input>
+  </div>
+  <div id="bottom" #bottom></div>
+</ion-content>

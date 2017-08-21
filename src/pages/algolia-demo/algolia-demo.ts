@@ -14,15 +14,17 @@ import algoliasearch from 'algoliasearch';
   templateUrl: 'algolia-demo.html',
 })
 export class AlgoliaDemoPage {
-  public aglClient = algoliasearch('9OW81NTIOO', 'a727dcd997e99560964e9b9861703ec8');
+  //public aglClient = algoliasearch('9OW81NTIOO', 'a727dcd997e99560964e9b9861703ec8');
+  aglClient = algoliasearch("9OW81NTIOO", "1154bed2113f415c7cb16056d989cff6");
   public aglIndex: algoliasearch.AlgoliaIndex;
   public keyword: string;
-  public hits: any;
+  public hits: any = [];
   public noHits: string = "0/0";
+  public object: any = Object;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
     console.log('init algolia');
-    this.aglIndex = this.aglClient.initIndex('contacts');
+    this.aglIndex = this.aglClient.initIndex('ionic3firebase');
   }
 
   ionViewDidLoad() {

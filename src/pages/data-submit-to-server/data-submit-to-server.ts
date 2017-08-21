@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, LoadingController } from 'ionic-angular';
 import { FormBuilder, FormGroup } from '@angular/forms';
-import { Http, Headers, URLSearchParams } from '@angular/http';
+import { Http, Headers, URLSearchParams, RequestOptionsArgs } from '@angular/http';
 import 'rxjs/add/operator/map';
 import { Profile } from '../../libs/model/profile';
 
@@ -42,7 +42,8 @@ export class DataSubmitToServerPage {
       body.set('name', this.profileForm.get('name').value);
       body.set('address', this.profileForm.get('address').value);
       let headers = new Headers({ 'Content-Type': 'application/x-www-form-urlencoded' });
-      this.http.post('https://us-central1-ionic3firebase.cloudfunctions.net/receiveData', body, headers)
+      let opts:RequestOptionsArgs = { headers: headers };
+      this.http.post('https://us-central1-ionic3firebase.cloudfunctions.net/receiveData', body, opts)
         .map(response => {
           var result = <Profile>response.json();
           return result;
